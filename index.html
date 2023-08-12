@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive website build by ilham hossain ayzan </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles2.css"> 
+</head>
+<body>
+    <div class="navbar"> 
+        <div class="logo"> 
+            <h1> responsive <span> website.</span></h1>
+        </div>
+        <li> <a href="#"> home</a></li>
+        <li> <a href="#"> projects</a></li>
+        <li> <a href="#"> services</a></li>
+        <li> <a href="#"> about us</a></li>
+    </div>
+    <div class="container"> 
+        <h1> responsive website. </h1>
+        <h2> devlope by ilham hossain ayzan </h2>
+        <p> hi there i'm youngest website devloper trying to make a <br> 
+        responsive website hope you all like my first project </p>
+       <div class="box1"> 
+      <img src="coding.jpg"> 
+    </div>
+        </div>
+        <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    margin-bottom:2vw ;
+}
+.navbar a{
+    font-size: 1.1em;
+}
+.navbar li{
+     list-style-type: none;
+     margin-left: 12vw;
+}
+.logo{
+    font-size: 0.89em;
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    right: 50px;
+}
+.logo span{
+    color: blue;
+}
+.container{
+    
+    width: 100vw;
+    height: 85.8vh;  
+}
+.container h1{
+    color: black;
+    position: absolute;
+    margin-left: 3vw;
+}
+.container h2{
+    color: black;
+    line-height: 11vw;
+    display: inline;
+    margin-left: 3vw;
+    color: blue;
+}
+.container p{
+    color: black;
+    margin-left: 3vw;
+    position: relative;
+    bottom: 30px;
+}
+.box1{
+    position: absolute;
+    right: 20%;
+    bottom: 40%;
+}
+.box1 img{
+    margin-top: 1vw;
+   position: relative;
+   transform: scale(1.6);
+}
+ 
+.container h1::selection{
+    color: blue;
+    background-color: black;
+}
+@media  (max-width:872px){
+    body{
+         width: 100%;
+         height: 100%;
+    }
+    .box1 img{
+        background-color: red;
+        transform: scale(1.4);
+        margin:0px;
+        position: relative;
+        top:5%
+    }
+    .navbar{
+        width: 100vw;
+        height: 6vw;
+    }
+    .navbar a{
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .logo{
+        white-space: nowrap;
+        font-size: 11px;
+        margin-left: 12vw;
+    }
+    .container{
+        position: relative;
+        bottom: 30%;
+        line-height: 3vw;
+    }
+    .container p{
+       line-height: 4vw;
+    }
+    @media  (max-width:816px) {
+        .box1 img{
+             transform:scale(1.2);
+        }
+    }
+    @media (max-width:700px){
+        .logo h1{
+            font-size: 15px;
+
+        }
+    }
+    @media  (max-width:645px) {
+        .navbar{
+            width: 800px;
+        }    
+        .container{
+              line-height: 3vw;
+        }
+        .logo{
+            margin-left: 4vw;
+        }
+  
+
+    .container h1{
+        color:black;
+        font-size: 23px;
+    }
+    .container h2{
+        font-size: 17px;
+    }
+    .container p{
+        font-size: 12px;
+    }
+    }
+}
+@media(max-width:610px){
+    .navbar{
+        width: 700px;
+    }
+    .logo h1{
+        font-size: 1.2em;
+    }
+    .logo{
+        margin-left: 18vw;
+    }
+}
+@media (max-width:522px){ 
+    .logo{
+        position: relative;
+        right: 15%;
+    }
+    .container h1{
+        line-height: 12px;
+    }
+    .container p{
+        position: relative;
+        top: 2px;
+    }
+}
+@media (max-width:450px){
+    .navbar{
+        display: none;
+    }
+    .container{
+        position: relative;
+        top: 30px
+    }
+    .box1{
+        position: absolute;
+        right: 35%;
+        transform: scale(1.1);
+    }
+} 
+        </style>
+</body>
+</html>
